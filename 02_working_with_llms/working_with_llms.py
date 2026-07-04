@@ -4,18 +4,17 @@ Multi provider, config, streaming and cost optimization
 """
 
 from dotenv import load_dotenv
-from langchain.chat_models import init_chat_model
+from langchain.chat_models import init_chat_model, BaseChatModel
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 
+from models import GEMINI_FLASH_2_5, GPT_4_1_MINI
+
 load_dotenv()
 
-GEMINI_FLASH = "google/gemini-2.5-flash"
-COHERE_7B = "cohere/command-r7b-12-2024"
 
-
-def build_model(model):
+def build_model(model) -> BaseChatModel:
     return init_chat_model(
         model,
         model_provider="openai",
@@ -27,8 +26,8 @@ def build_model(model):
 
 def demo_model_comparison(prompt):
     models = {
-        "gemini-flash": build_model(GEMINI_FLASH),
-        "command-7b": build_model(COHERE_7B),
+        "gemini-flash": build_model(GEMINI_FLASH_2_5),
+        "gpt-4.1-mini": build_model(GPT_4_1_MINI),
     }
 
     for model_name, model in models.items():
@@ -37,18 +36,27 @@ def demo_model_comparison(prompt):
 
 
 def demo_message():
-    model = build_model(GEMINI_FLASH)
+    model = build_model(GEMINI_FLASH_2_5)
 
     messages = [
         SystemMessage(
-            content="You are a greedy assistant. Answer in one sad sentence, do not use *"
+            content="You are a passionate assistant. "
+            "Answer in one blissfull sentence, do not use *"
         ),
         HumanMessage(content="Explain me why the sky is blue"),
     ]
 
     response = model.invoke(messages)
 
-    print(f"Response using message objects: {response.content}")
+    print(f"Response:\n {response.content}")
+
+    # Multi-turn conversatoin using message objects
+    messages.append(response)
+    messages.append(HumanMessage(content="Why is not red?"))
+
+    response = model.invoke(messages)
+
+    print(f"Follow up response: {response.content}")
 
 
 if __name__ == "__main__":
