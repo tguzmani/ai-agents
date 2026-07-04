@@ -9,7 +9,7 @@ load_dotenv()
 
 def exercise_first_chain(product, audience):
     """
-    Excercise: Create a chain that:
+    Exercise: Create a chain that:
     1. Takes a product name and target audience
     2. Generate a marketing tagline
     3. Returns just the tagline as a string
