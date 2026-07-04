@@ -2,6 +2,7 @@ from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
+from langchain.chat_models import init_chat_model
 
 load_dotenv()
 
@@ -20,7 +21,10 @@ def exercise_first_chain(product, audience):
         "Generate a marketing tagline given this product: {product} and target audience: {audience}. Answer in one line ONLY, do not use **"
     )
 
-    model = ChatOpenAI(model="google/gemini-2.5-flash", temperature=0.8)
+    # use this one for initializing models!
+    model = init_chat_model(
+        "google/gemini-2.5-flash", model_provider="openai", temperature=0.8
+    )
 
     parser = StrOutputParser()
 
