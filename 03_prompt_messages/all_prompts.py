@@ -14,7 +14,7 @@ from langchain_core.messages import (
     ToolMessage,
 )
 
-from models.models import build_model, GPT_4_1_MINI
+from util.models import build_model, GPT_4_1_MINI
 
 model = build_model(GPT_4_1_MINI)
 

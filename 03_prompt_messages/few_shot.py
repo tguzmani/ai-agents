@@ -10,7 +10,7 @@ from langchain_core.messages import (
     ToolMessage,
 )
 
-from models.models import build_model, GEMINI_FLASH_2_5
+from util.models import build_model, GEMINI_FLASH_2_5
 
 load_dotenv()
 
