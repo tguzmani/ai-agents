@@ -9,7 +9,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 
-from models import GEMINI_FLASH_2_5, GPT_4_1_MINI
+from models.models import GEMINI_FLASH_2_5, GPT_4_1_MINI
 
 load_dotenv()
 

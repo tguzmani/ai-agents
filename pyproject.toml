@@ -11,3 +11,10 @@ dependencies = [
     "langgraph>=1.2.7",
     "python-dotenv>=1.2.2",
 ]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["models*"]
