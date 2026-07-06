@@ -5,13 +5,12 @@ from langchain.chat_models import init_chat_model, BaseChatModel
 load_dotenv()
 
 
-def build_model(model) -> BaseChatModel:
+def build_model(model: str, temperature: float = 0.9) -> BaseChatModel:
     return init_chat_model(
         model,
         model_provider="openai",
-        temperature=0.9,
+        temperature=temperature,
         max_retries=3,
-        streaming=True,
     )
 
 
