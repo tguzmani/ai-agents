@@ -20,6 +20,7 @@ class SmartQABot:
             ]
         )
         self.chain = self.prompt | self.model
+        self.langsmith_client = Client()
 
     @traceable(name="ask", run_type="chain")
     def ask(self, question: str) -> QAResponse:
@@ -41,4 +42,4 @@ class SmartQABot:
         return self.chain.batch(inputs)
 
     def flush(self):
-        Client().flush()
+        self.langsmith_client.flush()

@@ -59,8 +59,8 @@ def bot_ask_batch_loop():
 if __name__ == "__main__":
     try:
         # bot_ask_one_loop()
-        # bot_ask_batch_loop()
+        bot_ask_batch_loop()
         # bot_error_handling()
-        pass
+        # pass
     finally:
         bot.flush()

@@ -1,5 +1,16 @@
 # CLAUDE.md
 
+## Language
+
+- **Always respond in Spanish.** Use a **neutral Venezuelan** register — NOT
+  Argentine. That means:
+  - Use **"tú"**, never "vos" (e.g. "si tú quieres", NOT "si vos querés").
+  - Standard tuteo conjugations: "tú tienes / quieres / puedes", NOT
+    "tú tenés / querés / podés".
+  - Avoid Argentine slang and voseo imperatives ("quedate", "fijate", "dale") —
+    prefer neutral forms ("quédate", "fíjate", "listo").
+- Technical terms, code, and library/API names stay in English as usual.
+
 ## About this project
 
 This entire repository is a **learning course** for the user to study AI agents,
