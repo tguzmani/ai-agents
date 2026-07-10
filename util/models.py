@@ -29,9 +29,11 @@ MODELS: dict[str, Model] = {
     "deepseek_v3": Model("deepseek/deepseek-chat-v3-0324", 0.24, 0.90),
     "claude-3-haiku": Model("anthropic/claude-3-haiku", 0.25, 1.25),
     "gpt-4.1-mini": Model("openai/gpt-4.1-mini", 0.40, 1.60),
+    "text-embedding-3-small": Model("openai/text-embedding-3-small", 0.02, 0.0),
 }
 
 GEMINI_FLASH_2_5 = MODELS["gemini-flash"].id
 CLAUDE_3_HAIKU = MODELS["claude-3-haiku"].id
 GPT_4_1_MINI = MODELS["gpt-4.1-mini"].id
 DEEPSEEK_V3 = MODELS["deepseek_v3"].id
+TEXT_EMBEDDING_3_SMALL = MODELS["text-embedding-3-small"].id
