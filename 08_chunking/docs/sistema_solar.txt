@@ -1,0 +1,61 @@
+# El Sistema Solar
+
+El Sistema Solar es el conjunto formado por el Sol y todos los cuerpos celestes que orbitan a su alrededor, ligados gravitacionalmente a él. Se formó hace aproximadamente 4600 millones de años a partir del colapso de una nube molecular gigante. La inmensa mayoría de la masa del sistema, más del 99%, se concentra en el Sol, mientras que el resto se reparte entre los ocho planetas, sus lunas, los planetas enanos, asteroides, cometas y el polvo interplanetario.
+
+## El Sol
+
+El Sol es una estrella de tipo espectral G2V, situada en el centro del Sistema Solar. Su diámetro es de aproximadamente 1,4 millones de kilómetros, lo que equivale a unas 109 veces el diámetro de la Tierra. En su núcleo se producen reacciones de fusión nuclear que convierten hidrógeno en helio, liberando enormes cantidades de energía en forma de luz y calor. Esta energía tarda unos ocho minutos en llegar a la Tierra viajando a la velocidad de la luz. La temperatura en su superficie ronda los 5500 grados Celsius, mientras que en el núcleo alcanza los 15 millones de grados. El Sol representa la fuente de energía que hace posible la vida en la Tierra y gobierna, con su gravedad, el movimiento de todos los cuerpos del sistema.
+
+## Los planetas interiores o rocosos
+
+Los cuatro planetas más cercanos al Sol se conocen como planetas interiores, terrestres o rocosos, porque están compuestos principalmente de roca y metal y poseen superficies sólidas.
+
+### Mercurio
+
+Mercurio es el planeta más cercano al Sol y también el más pequeño del Sistema Solar. No posee atmósfera significativa, por lo que sufre variaciones extremas de temperatura: durante el día su superficie puede superar los 400 grados Celsius, mientras que de noche desciende por debajo de los 170 grados bajo cero. Su superficie está cubierta de cráteres, muy similar a la de la Luna, y completa una órbita alrededor del Sol en apenas 88 días terrestres.
+
+### Venus
+
+Venus es el segundo planeta y suele llamarse el gemelo de la Tierra por su tamaño y masa similares. Sin embargo, sus condiciones son infernales. Posee una densa atmósfera de dióxido de carbono con nubes de ácido sulfúrico que atrapan el calor mediante un intenso efecto invernadero. Esto hace que sea el planeta más caliente del Sistema Solar, con temperaturas superficiales cercanas a los 465 grados Celsius, incluso más caliente que Mercurio a pesar de estar más lejos del Sol. Venus gira sobre su propio eje en sentido contrario al de la mayoría de los planetas.
+
+### La Tierra
+
+La Tierra es el tercer planeta y el único conocido hasta ahora que alberga vida. Cuenta con abundante agua líquida en su superficie, una atmósfera rica en nitrógeno y oxígeno, y un campo magnético que la protege de la radiación solar dañina. Su única luna natural, la Luna, influye en las mareas y estabiliza la inclinación del eje terrestre, lo que contribuye a un clima relativamente estable a lo largo del tiempo.
+
+### Marte
+
+Marte, conocido como el planeta rojo por el óxido de hierro que cubre su superficie, es el cuarto planeta. Posee la montaña más alta del Sistema Solar, el Monte Olimpo, un volcán que alcanza unos 22 kilómetros de altura. Marte tiene dos pequeñas lunas, Fobos y Deimos, y muestra evidencias de que en el pasado hubo agua líquida corriendo por su superficie. Es actualmente el principal objetivo de las misiones de exploración que buscan rastros de vida pasada y evalúan la posibilidad de una futura presencia humana.
+
+## El cinturón de asteroides
+
+Entre las órbitas de Marte y Júpiter se encuentra el cinturón de asteroides, una región poblada por millones de cuerpos rocosos de tamaños muy variados. El más grande es Ceres, considerado un planeta enano. A pesar de lo que suele mostrarse en la ficción, los asteroides están tan separados entre sí que una nave espacial puede atravesar el cinturón sin apenas riesgo de colisión.
+
+## Los planetas exteriores o gigantes gaseosos
+
+Más allá del cinturón de asteroides se encuentran los cuatro planetas gigantes, mucho más grandes que los rocosos y compuestos principalmente de gases y hielos.
+
+### Júpiter
+
+Júpiter es el planeta más grande del Sistema Solar, tan masivo que podría contener a todos los demás planetas juntos en su interior. Es un gigante gaseoso formado sobre todo por hidrógeno y helio. Su rasgo más característico es la Gran Mancha Roja, una gigantesca tormenta anticiclónica que lleva siglos activa y que es más grande que la propia Tierra. Júpiter posee además un extenso sistema de decenas de lunas, entre las que destacan las cuatro lunas galileanas: Ío, Europa, Ganímedes y Calisto.
+
+### Saturno
+
+Saturno es el sexto planeta y el más reconocible gracias a su espectacular sistema de anillos, formados por miles de millones de partículas de hielo y roca que orbitan a su alrededor. Aunque otros gigantes gaseosos también tienen anillos, los de Saturno son de lejos los más grandes y brillantes. La misión Cassini estudió el planeta durante trece años y uno de sus hallazgos más importantes fueron los géiseres de agua que brotan de Encélado, una de sus lunas, lo que la convierte en un lugar de gran interés en la búsqueda de vida.
+
+### Urano
+
+Urano es el séptimo planeta y presenta una peculiaridad notable: gira prácticamente de lado, con su eje de rotación inclinado casi noventa grados respecto a su órbita. Esto provoca estaciones extremadamente largas y extrañas. Se trata de un gigante de hielo, compuesto por agua, metano y amoníaco, y su atmósfera de metano le da un característico color azul verdoso.
+
+### Neptuno
+
+Neptuno es el octavo y más lejano planeta del Sistema Solar. También es un gigante de hielo, de un intenso color azul, y destaca por tener los vientos más veloces del sistema, que pueden superar los 2000 kilómetros por hora. Fue el primer planeta descubierto mediante cálculos matemáticos antes de ser observado directamente con un telescopio, gracias a las perturbaciones que provocaba en la órbita de Urano.
+
+## Planetas enanos y cuerpos menores
+
+Más allá de Neptuno se extiende el cinturón de Kuiper, una vasta región de cuerpos helados. Allí se encuentra Plutón, que fue considerado el noveno planeta hasta el año 2006, cuando la Unión Astronómica Internacional lo reclasificó como planeta enano al establecer una nueva definición de planeta. Otros planetas enanos conocidos son Eris, Haumea y Makemake.
+
+Los cometas son cuerpos helados que, al acercarse al Sol, desarrollan una brillante cola de gas y polvo. Muchos provienen de la nube de Oort, una región esférica situada en los confines del Sistema Solar. Los cometas han fascinado a la humanidad durante milenios y algunos, como el cometa Halley, son visibles desde la Tierra de forma periódica.
+
+## El fin del Sistema Solar
+
+El Sistema Solar no es eterno. Dentro de unos 5000 millones de años, el Sol agotará el hidrógeno de su núcleo y se expandirá hasta convertirse en una gigante roja, engullendo probablemente a los planetas más cercanos. Finalmente expulsará sus capas externas y quedará reducido a una enana blanca, una densa brasa estelar que se irá enfriando lentamente a lo largo de miles de millones de años.
