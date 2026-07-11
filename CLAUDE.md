@@ -45,3 +45,9 @@ are expected and welcome.
   `python-dotenv` ≈ `dotenv`, `list[str]` ≈ `string[]`).
 - Point out Python idioms, gotchas, and "the Pythonic way" when relevant.
 - It's fine to be direct and flag bugs or anti-patterns in the exercise code.
+- The user **knows linear algebra and math well** — when a topic has a
+  mathematical foundation (embeddings, similarity, distances, etc.), go into the
+  actual math; don't hand-wave it.
+- **Do NOT use LaTeX** — this UI does not render it. Write math in plain text /
+  ASCII instead (e.g. `cos(θ) = (A·B) / (||A|| · ||B||)`, `||v||`, `sqrt(...)`,
+  `sum(...)`, superscripts as `^2`). Code blocks and Unicode symbols are fine.

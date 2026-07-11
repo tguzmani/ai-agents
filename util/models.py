@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from dotenv import load_dotenv
 from langchain.chat_models import init_chat_model, BaseChatModel
+from langchain_openai import OpenAIEmbeddings
 
 load_dotenv()
 
@@ -12,6 +13,18 @@ def build_model(model: str, temperature: float = 0.9) -> BaseChatModel:
         temperature=temperature,
         max_retries=3,
     )
+
+
+def build_embeddings(model: str) -> OpenAIEmbeddings:
+    # Igual que build_model: OpenAIEmbeddings hereda OPENAI_API_KEY y
+    # OPENAI_API_BASE del entorno, así que sale por OpenRouter sin config extra.
+    #
+    # check_embedding_ctx_length=False: manda el texto crudo a la API en vez de
+    # tokenizar localmente con tiktoken. tiktoken no sabe mapear el id de
+    # OpenRouter ("openai/text-embedding-3-small") a un tokeniser, y su fallback
+    # (descargar cl100k_base) se cuelga si esa descarga no responde. OpenRouter
+    # tokeniza del lado del servidor, así que no perdemos nada.
+    return OpenAIEmbeddings(model=model, max_retries=3, check_embedding_ctx_length=False)
 
 
 @dataclass(frozen=True)
