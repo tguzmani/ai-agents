@@ -13,10 +13,10 @@ parser = StrOutputParser()
 
 def retrieve_context(question: str) -> str:
     """Retriever falso (paso RETRIEVE del RAG).
-
-    En un RAG real recibiría la pregunta y buscaría los documentos
-    relevantes en una base vectorial. Aquí ignora la pregunta y
-    devuelve siempre un documento fijo sobre delfines.
+    x
+        En un RAG real recibiría la pregunta y buscaría los documentos
+        relevantes en una base vectorial. Aquí ignora la pregunta y
+        devuelve siempre un documento fijo sobre delfines.
     """
     return (
         "Dolphins are highly intelligent marine mammals known for their "
