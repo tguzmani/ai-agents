@@ -47,7 +47,7 @@ def print_header(title: str, subtitle=None):
     print("=" * 60)
 
 
-def create_base_vector_store():
+def create_base_vector_store() -> Chroma:
     """Create a basic vector store for demos."""
 
     return Chroma.from_documents(documents=TECH_DOCS, embedding=embeddings)
@@ -163,7 +163,92 @@ def self_query_retriever():
         print(doc.page_content)
 
 
+def hybrid_search():
+    print_header(
+        title="Hybrid Search", subtitle="Combines semantic search with keyword search"
+    )
+
+    vector_store = create_base_vector_store()
+
+    bm25_retriever = BM25Retriever.from_documents(TECH_DOCS, k=3)
+
+    semantic_retriever = vector_store.as_retriever(search_kwargs={"k": 3})
+
+    ensemble_retriever = EnsembleRetriever(
+        retrievers=[bm25_retriever, semantic_retriever], weights=[0.4, 0.6]
+    )
+
+    queries = [
+        # BM25: keywords exactos del doc de JavaScript (React, Node, async/await)
+        "async await Promises Node.js React",
+        # Semántica: parafrasea LangGraph; BM25 suele priorizar LangChain por "LLM"
+        "orchestrating multiple LLM actors with persistent state",
+        # Split: BM25 → PostgreSQL/pgvector; semántica → vector DBs/RAG; ensemble → ambos
+        "relational database with vector similarity for AI search",
+    ]
+
+    for query in queries:
+        print(f"\nOriginal query: {query}")
+
+        bm25_docs = bm25_retriever.invoke(query)
+        semantic_docs = semantic_retriever.invoke(query)
+        ensemble_docs = ensemble_retriever.invoke(query)
+
+        for i, doc in enumerate(bm25_docs):
+            print(f"\n[{i}] (BM25)")
+            print(doc.page_content)
+
+        for i, doc in enumerate(semantic_docs):
+            print(f"\n[{i}] (Semantic)")
+            print(doc.page_content)
+
+        for i, doc in enumerate(ensemble_docs):
+            print(f"\n[{i}] (Ensemble)")
+            print(doc.page_content)
+
+
+def parent_document_retriever():
+    print_header(
+        title="Parent Document Retriever",
+        subtitle="Retrieves the parent document of a given document",
+    )
+
+    vector_store = Chroma(
+        collection_name="parent_document_retriever",
+        embedding_function=embeddings,
+    )
+
+    child_splitter = RecursiveCharacterTextSplitter(chunk_size=50, chunk_overlap=10)
+    parent_splitter = RecursiveCharacterTextSplitter(chunk_size=200, chunk_overlap=50)
+
+    store = InMemoryStore()
+
+    parent_retriever = ParentDocumentRetriever(
+        child_splitter=child_splitter,
+        parent_splitter=parent_splitter,
+        vectorstore=vector_store,
+        docstore=store,
+        search_kwargs={"k": 2},
+    )
+
+    parent_retriever.add_documents(TECH_DOCS)
+
+    query = "What is the parent document of the document about PostgreSQL?"
+
+    child_docs = vector_store.as_retriever(search_kwargs={"k": 2}).invoke(query)
+    for i, doc in enumerate(child_docs):
+        print(f"\n[{i}] (Child)")
+        print(doc.page_content)
+
+    parent_docs = parent_retriever.invoke(query)
+    for i, doc in enumerate(parent_docs):
+        print(f"\n[{i}] (Parent)")
+        print(doc.page_content)
+
+
 if __name__ == "__main__":
     # multi_query_retriever()
     # contextual_compression()
-    self_query_retriever()
+    # self_query_retriever()
+    # hybrid_search()
+    parent_document_retriever()
